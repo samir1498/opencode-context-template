@@ -5,7 +5,7 @@ Investigation output. You asked a question, got an answer, saved it.
 ## Convention
 
 ```
-research/
+personal-research/
 ├── engineering-and-product/
 │   ├── 2026-06-17-topic-name.md
 │   └── another-finding.md

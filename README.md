@@ -38,7 +38,7 @@ Separate from the context repo. Research is **investigation output** — you ask
 ### Convention
 
 ```
-research/
+personal-research/
 ├── domain-name/
 │   ├── 2026-06-17-topic-name.md
 │   └── another-finding.md
