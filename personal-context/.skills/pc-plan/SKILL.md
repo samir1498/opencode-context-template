@@ -64,19 +64,6 @@ references:                  # optional: cross-links to research, plans, or URLs
 - After adding refs, use `plan_references` MCP tool to verify (fallback: `ctx plan references <slug>`)
 - When completing a plan that was informed by research, update the research INDEX.md status if applicable
 
-## Plan lifecycle flow
-
-When working with plans, follow this pattern:
-
-1. **Session start** — Run `plan_stale` MCP (or `ctx stale`) to detect stale plans + outdated focus
-2. **Session start** — Run `plan_reconcile` MCP (or `ctx reconcile`) for dry-run check on unapplied commit trailers
-3. **Pick a plan** — Use `plan_show` to read details, then pick from `plan_list` active plans
-4. **Work** — Update tasks via `plan_task_status` as you go
-5. **Session end** — Run `plan_reconcile` MCP with `apply: true` (or `ctx reconcile --apply`) to close tasks from commit trailers
-6. **Session end** — Run `plan_stale` again to catch remaining staleness
-
-See .skills/pc-context/SKILL.md for full session start/end rituals.
-
 ## After creating
 - Run `plan_validate` MCP tool to verify (fallback: `ctx validate`)
 - Commit: `git -C personal-context commit -am "plan: add <slug>"`
